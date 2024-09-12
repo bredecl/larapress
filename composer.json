@@ -1,0 +1,47 @@
+{
+    "name": "bredecl/larapress",
+    "description": "A plugin to connect and use WordPress functions on Laravel [WIP]",
+    "homepage": "http://github.com/bredecl/larapress",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brede Basualdo",
+            "email": "hola@brede.cl",
+            "homepage": "https://brede.cl"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/database": "^11.0",
+        "illuminate/filesystem": "^11.0",
+        "illuminate/support": "^11.0",
+        "fakerphp/faker": "^1.19",
+        "bordoni/phpass": "0.3.*",
+        "thunderer/shortcode": "^0.7.3"
+    },
+    "require-dev": {
+        "laravel/legacy-factories": "^1.0",
+        "orchestra/testbench": "^9.0",
+        "symfony/thanks": "^1.0",
+        "mockery/mockery": "^1.4.4",
+        "dms/phpunit-arraysubset-asserts": "^0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Larapress\\": "src/",
+            "Larapress\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Larapress\\Laravel\\LarapressServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/thanks": true
+        }
+    }
+}

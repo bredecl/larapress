@@ -1,2 +1,2 @@
 # larapress
-A plugin to connect and user WordPress functions on Laravel
+A plugin to connect and use WordPress functions on Laravel
